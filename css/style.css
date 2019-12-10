@@ -1,0 +1,86 @@
+body{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#payment{
+    width: 300px;
+}
+
+
+
+
+#carclass{
+    width: 250px;
+}
+
+td{
+    table-layout: auto;
+    text-align: center;
+}
+
+
+
+#map-wrapper{
+    display: inline-block;
+}
+
+#map {
+    width: 1000px;
+    height: 600px;
+}
+
+#reset {
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+    z-index: 500;
+    /*width: 50px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: antiquewhite;
+    */
+}
+
+#panel {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    z-index: 500;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#mytable {
+    border-collapse: collapse;
+    width: 1000px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+#cost:hover{
+    background-color: red;
+    color: white;
+}
+
+#cost td:hover{
+    font-weight: bolder;
+    background-color: maroon;
+}
+
+
+
+a:visited {
+  color: gray;
+  font-family: 'Arial';
+  text-decoration: underline;
+}
+
+.center{
+    width: 80%;
+}
+
+

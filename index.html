@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Connecticut Proposed Tolls</title>
+
+        <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+    <div id="container">
+        <div id ="page-header">
+            <h1>What Will Tolls Cost You?</h1>        
+        </div>
+        <div id="map-wrapper">
+            <div id="map">
+                <button id="reset">Reset</button>
+                <div id="panel"><font size="5">Click Gantries<br>Along Your<br>Route to <br> Find Out</font></div>
+            </div>
+        
+        </div>
+     <div id="mytable">
+            <table>
+                <tr>
+                    <th id = "payment" rowspan="3">Payment Type</th>
+                    <th id = "carclass" colspan="2">Class 1</th>
+                    <th id = "carclass" colspan="2">Class 2</th>
+                    <th id = "carclass" colspan="2">Class 3</th>
+                </tr>
+                <tr>
+                    <th id = "carclass" colspan="2">Passenger Vehicles</th>
+                    <th id = "carclass" colspan="2">Medium Trucks, Buses</th>
+                    <th id = "carclass" colspan="2">Heavy Trucks</th>
+                </tr>
+                <tr>
+                    <td>Off-Peak</td>
+                    <td>Peak</td>
+                    <td>Off-Peak</td>
+                    <td>Peak</td>
+                    <td>Off-Peak</td>
+                    <td>Peak</td>
+                </tr>
+                <tr id = "cost">
+                    <td>CT E-Z Pass (30% discount off base rate)</td>
+                </tr>
+                <tr id = "cost">
+                    <td>CT E-Z Pass (with 20% commuter discount)</td>
+                </tr>
+                <tr id = "cost">
+                    <td>Out of State E-Z Pass (base rate)</td>
+                </tr>
+                <tr id = "cost">
+                    <td>Pre-Registered Plate (25% higher than base)</td>
+                </tr>
+                <tr id = "cost">
+                    <td>Unregistered Plate (50% higher than base)</td>
+                </tr>
+            </table>
+        </div>   
+    </div>
+    <div id = "source">
+        <a href="https://portal.ct.gov/-/media/DOT/documents/dcommunications/Press_Release/CTDOTTollingReport11142018pdf.pdf?la=en">
+            Based on Connecticut Tolling Evaluation Study, November 2018
+        </a>
+    </div>
+    
+    <script type="text/javascript" src="lib/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="lib/leaflet/leaflet-src.js"></script>
+    <script type="text/javascript" src="lib/esri-leaflet/esri-leaflet.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="data/TollGantries.geojson"></script>
+    
+
+</body>
+</html>
